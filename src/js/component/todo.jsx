@@ -18,10 +18,10 @@ const TODO = () => {
 					}
 				}}></input>
 
-			<ul>
+			<div>
 				{list.map((item, index) => {
 					return (
-						<li key={index}>
+						<div key={index}>
 							{item}{" "}
 							<button
 								onClick={() => {
@@ -32,10 +32,10 @@ const TODO = () => {
 								}}>
 								Delete
 							</button>
-						</li>
+						</div>
 					);
 				})}
-			</ul>
+			</div>
 		</div>
 	);
 };
